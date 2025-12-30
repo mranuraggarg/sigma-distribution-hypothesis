@@ -8,7 +8,7 @@ A probabilistic framework for understanding lifestyle disease onset, aging, and 
 cd code
 pip install -r requirements.txt
 python generate_figures.py
-
+```
 ## Repository Structure
 
 - `manuscript/` - LaTeX source and compiled manuscript
@@ -49,7 +49,7 @@ sigma-distribution-hypothesis/
 └─ docs/
    ├─ figure\_policy.md              # what is illustrative vs empirical
    └─ reproducibility.md            # exact steps to regenerate
-
+```
 
 ## Reproducibility
 ### Compile manuscript
