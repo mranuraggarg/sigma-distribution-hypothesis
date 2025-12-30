@@ -16,7 +16,7 @@ python generate_figures.py
 - `docs/` - Submission materials and documentation
 - `supplementary/` - Additional materials
 
-```
+```text
 sigma-distribution-hypothesis/
 ├─ README.md
 ├─ LICENSE
