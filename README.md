@@ -19,15 +19,12 @@ python code/public_database_illustration.py
 
 ## Repository Structure
 
+```text
 sigma-distribution-hypothesis/
 ├─ README.md
 ├─ LICENSE
 ├─ CITATION.cff
 ├─ .gitignore
-
-# R default plot output
-Rplots.pdf
-
 ├─ requirements.txt
 │
 ├─ manuscript/
@@ -61,8 +58,10 @@ Rplots.pdf
 │  └─ public_database_illustration.py
 │
 └─ docs/
-│  ├─ reproducibility.md
-│  └─ figure_policy.md
+   ├─ reproducibility.md
+   └─ figure_policy.md
+```
+Note: R may create a default file named `Rplots.pdf` if an interactive graphics device is used. This repository ignores that file; all intended figures are saved under `analysis/outputs/figures/`.
 
 ## Reproducibility
 
