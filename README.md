@@ -24,6 +24,10 @@ sigma-distribution-hypothesis/
 ├─ LICENSE
 ├─ CITATION.cff
 ├─ .gitignore
+
+# R default plot output
+Rplots.pdf
+
 ├─ requirements.txt
 │
 ├─ manuscript/
