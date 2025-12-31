@@ -1,0 +1,5 @@
+dataset,model,auc
+synthetic,traditional,0.8667588863191357
+synthetic,sigma,0.8662416506289277
+nhanes_demo,traditional,0.7696001160003987
+nhanes_demo,sigma,0.7695739785710369
