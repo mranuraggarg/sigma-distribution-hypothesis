@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the associated manuscript."
+title: "The Sigma-Distribution Hypothesis: A Probabilistic Framework for Lifestyle Disease Onset, Aging, and Prevention"
+authors:
+  - family-names: Garg
+    given-names: Anurag
+    orcid: https://orcid.org/0000-0001-9448-3960
+version: 1.0.0
+date-released: 2025-12-31
+repository-code: https://github.com/mranuraggarg/sigma-distribution-hypothesis
+license: CC-BY-4.0

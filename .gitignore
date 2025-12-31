@@ -1,22 +1,94 @@
+# =========================================================
+# OS / editor
+# =========================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.vscode/
+.idea/
+
+# =========================================================
 # Python
+# =========================================================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .venv/
-.env/
+venv/
+.env
+.ipynb_checkpoints/
 
-# OS
-.DS_Store
+# =========================================================
+# R
+# =========================================================
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+*.rds
 
-# LaTeX build
+# =========================================================
+# LaTeX build artifacts (anywhere)
+# =========================================================
 *.aux
-*.bbl
-*.blg
 *.log
 *.out
 *.toc
 *.lof
 *.lot
+*.bbl
+*.blg
 *.fls
 *.fdb_latexmk
 *.synctex.gz
-manuscript/build/
+*.run.xml
+*.bcf
+*.nav
+*.snm
+*.vrb
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.fls
+manuscript/*.fdb_latexmk
+manuscript/*.synctex.gz
+
+# =========================================================
+# Manuscript: keep source, ignore submission-system docs
+# (Your repo currently contains cover letter + rtf forms)
+# =========================================================
+manuscript/Cover Letter.*
+manuscript/*statement*.rtf
+manuscript/highlights*.rtf
+
+# Optional: ignore compiled PDFs in manuscript folder
+# (keep them locally; GitHub should store source + figures)
+manuscript/main.pdf
+manuscript/supplementary_material/supplementary_material.pdf
+
+# =========================================================
+# Canonical figures policy: keep ONE copy only
+# You currently have duplicates at repo root and in code/
+# Keep canonical copies under manuscript/figures/ ONLY
+# =========================================================
+figure1_sigma_hba1c.*
+code/figure1_sigma_hba1c.*
+
+# If you want the canonical location to be repo root instead,
+# comment the two lines above and instead ignore manuscript copies:
+# manuscript/figure1_sigma_hba1c.png
+# manuscript/figures/figure1_sigma_hba1c.png
+
+# =========================================================
+# Data policy: ignore large or derived outputs by default
+# =========================================================
+data/**/*
+!data/README.md
+!data/synthetic/
+!data/synthetic/**/*
+analysis/outputs/**/roc_*.rds
