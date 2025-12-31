@@ -1,0 +1,44 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{setspace}
+\geometry{margin=1in}
+\onehalfspacing
+
+\begin{document}
+
+\section*{Supplementary Material: Illustrative Computational Figures}
+
+The following figures are provided solely for conceptual illustration of the proposed sigma-distribution framework. They do not constitute clinical validation, hypothesis testing, or predictive evaluation, and are included to aid interpretability of the mathematical and population-level ideas discussed in the main text.
+
+The figures are organized to mirror the logical structure of the hypothesis. 
+The first two figures illustrate why absolute biomarker thresholds are insufficient across the lifespan and motivate age-conditioned positioning. 
+The third figure provides a controlled synthetic illustration showing that re-parameterization into sigma space is internally coherent under a known data-generating process. 
+Together, these figures support the conceptual plausibility of sigma-based positioning without asserting empirical validation.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figure_nhanes_biomarker_vs_age.png}
+\caption{\textbf{Illustrative population cross-section: biomarker level versus age.}
+A cross-sectional scatter plot with a nonparametric smoother shows that population biomarker distributions shift with age while retaining substantial dispersion at each age. This motivates age-conditioning when expressing an individual’s relative position within a population distribution. No incidence, progression, or onset-time inference is implied.}
+\label{fig:supp_nhanes_age}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figure_sigma_histogram.png}
+\caption{\textbf{Illustrative distribution of sigma positions.}
+Histogram of age-conditioned sigma (z-score) values demonstrates that sigma positioning yields a numerically stable and interpretable coordinate system across the population, with symmetric tails after conditioning. This figure illustrates feasibility and interpretability of the transformation rather than disease risk prediction.}
+\label{fig:supp_sigma_hist}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figure_synthetic_roc.png}
+\caption{\textbf{Synthetic illustration under a known generative model.}
+ROC curves compare representations based on an absolute biomarker scale versus an age-conditioned sigma coordinate in a controlled synthetic dataset where the data-generating process is specified. The purpose is to demonstrate internal coherence of the re-parameterization and illustrate how representation alone can influence discrimination in simulation. This is not external validation and does not imply clinical utility.}
+\label{fig:supp_synthetic_roc}
+\end{figure}
+
+\end{document}
